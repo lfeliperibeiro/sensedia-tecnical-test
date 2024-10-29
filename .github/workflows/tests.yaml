@@ -1,4 +1,4 @@
-name: Tests and Linting
+name: Tests
 
 on: pull_request
 
@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/hydrogen"
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Run Jest tests
         run: npm test
