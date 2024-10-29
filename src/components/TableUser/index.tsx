@@ -13,7 +13,7 @@ interface TableUserProps {
   users: User[];
 }
 
-export function TableUser({ users }: TableUserProps) {
+function TableUser({ users }: TableUserProps) {
   return (
     <div>
       <TableUserStyles aria-label="Files" selectionMode="multiple">
@@ -35,3 +35,5 @@ export function TableUser({ users }: TableUserProps) {
     </div>
   );
 }
+
+export default TableUser;
