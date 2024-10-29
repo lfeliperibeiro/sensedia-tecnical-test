@@ -5,7 +5,7 @@ interface CardUserProps {
   users: User[];
 }
 
-export function CardUser({ users }: CardUserProps) {
+function CardUser({ users }: CardUserProps) {
   return (
     <Container>
       {users.map((user) => (
@@ -18,3 +18,5 @@ export function CardUser({ users }: CardUserProps) {
     </Container>
   );
 }
+
+export default CardUser;

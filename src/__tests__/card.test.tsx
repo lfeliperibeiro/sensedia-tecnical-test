@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { User } from "../interface/user";
-import { CardUser } from "../components/CardUser";
+import CardUser from "../components/CardUser";
 
 describe("CardUser Component", () => {
   const users: User[] = [
